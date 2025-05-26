@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - ReptiCare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    :root { --reptigreen: #294C3A; }
+  </style>
+</head>
+<body class="bg-white font-sans">
+
+  <!-- Navigation -->
+  <header class="bg-[color:var(--reptigreen)] text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <img src="images/logo.svg" alt="ReptiCare Logo" class="h-8 w-8" />
+        <span class="font-bold text-xl">REPTICARE</span>
+      </div>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="shop.html" class="hover:underline">Shop</a>
+        <a href="about.html" class="hover:underline text-orange-400 font-semibold">About Us</a>
+        <a href="contact.html" class="hover:underline">Contact Us</a>
+      </nav>
+      <div class="flex items-center space-x-2">
+        <div class="relative">
+          <input type="text" placeholder="Search products..." class="rounded pl-10 pr-3 py-1 text-black">
+          <span class="absolute left-3 top-1.5 text-gray-500">🔍</span>
+        </div>
+        <button class="bg-white text-[color:var(--reptigreen)] px-4 py-1 rounded">Log in</button>
+        <button class="bg-green-700 px-4 py-1 rounded">Sign up</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Us Content Section -->
+  <section class="max-w-7xl mx-auto px-4 my-20">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-orange-600 font-semibold mb-2">Pet Health</p>
+        <h1 class="text-4xl font-bold text-black mb-4 leading-snug">Expert Reptile Care<br>in the Philippines</h1>
+        <p class="text-gray-600 text-lg mb-6">Your one-stop clinic for reptiles — from geckos to iguanas, we've got their health covered.</p>
+      </div>
+      <div class="flex justify-center">
+        <div class="relative w-full max-w-sm">
+          <div class="absolute inset-0 bg-orange-500 rounded-[80px] rotate-6 z-0" style="clip-path: circle(70% at center);"></div>
+          <img src="images/reptile-hero.png" alt="Reptile Image" class="relative z-10 w-full">
+        </div>
+      </div>
+    </div>
+
+  <!-- Contact Us Section -->
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Contact Form -->
+    <div class="bg-gray-100 p-6 rounded-lg shadow">
+      <form class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="First name" class="p-2 border rounded w-full" />
+          <input type="text" placeholder="Last name" class="p-2 border rounded w-full" />
+        </div>
+        <input type="email" placeholder="E-mail address" class="p-2 border rounded w-full" />
+        <textarea placeholder="Your message..." rows="4" class="p-2 border rounded w-full"></textarea>
+        <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Feel free to contact us</h2>
+      <p class="text-gray-700 mb-6">
+        At ReptiCare, we're dedicated to providing specialized care for your reptilian companions. Whether you have a question, need to schedule a consultation, or simply want to learn more about our services, we’re here to help. Reach out to us anytime—your pet’s health is our priority.
+      </p>
+      <ul class="space-y-4 text-gray-800">
+        <li><span class="font-semibold">📍 Address:</span> 123 Bonifacio St., Makati City, Manila, Philippines 1220</li>
+        <li><span class="font-semibold">✉️ Email:</span> repticare.ph@gmail.com</li>
+        <li><span class="font-semibold">📞 Phone:</span> +63 915 678 2345</li>
+        <li><span class="font-semibold">⏰ Hours:</span> Mon – Fri: 10AM – 10PM</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
+<section class="w-full h-96">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.9442113695956!2d121.01895787413385!3d14.605108376452596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9a697fbd3bb%3A0x84d5e6de928f24de!2s123%20Bonifacio%20St%2C%20Makati%2C%201220%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sph!4v1716716788870!5m2!1sen!2sph"
+    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+
+<!-- Footer -->
+  <footer class="bg-[color:var(--reptigreen)] text-white py-10 mt-16">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <h2 class="font-bold text-lg mb-2">🐾 REPTICARE</h2>
+        <p class="text-gray-300">
+          At ReptiCare, we specialize in the unique needs of scaly companions. Whether you care for snakes, lizards, geckos, or turtles, our clinic offers expert guidance, medical support, and premium products to keep your reptiles healthy and thriving.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white mb-2">Company</h3>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="about.html" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Gift cards</a></li>
+          <li><a href="#" class="hover:underline">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white mb-2">Useful Links</h3>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="#" class="hover:underline">New products</a></li>
+          <li><a href="#" class="hover:underline">Best sellers</a></li>
+          <li><a href="#" class="hover:underline">Discount</a></li>
+          <li><a href="#" class="hover:underline">F.A.Q</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white mb-2">Customer Service</h3>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+          <li><a href="#" class="hover:underline">Shipping</a></li>
+          <li><a href="#" class="hover:underline">Returns</a></li>
+          <li><a href="#" class="hover:underline">Order tracking</a></li>
+        </ul>
+        <div class="mt-4 text-sm text-gray-300">
+          <p>📍 123 Bonifacio St., Makati City, Manila, Philippines 1220</p>
+          <p>📞 +63 916 878 2345</p>
+          <p>✉️ repticare.ph@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-600 mt-10 pt-4 px-4 text-center text-gray-400 text-sm">
+      <div class="flex justify-center space-x-4 mb-2">
+        <a href="#"><img src="images/facebook-icon.svg" alt="Facebook" class="h-5"></a>
+        <a href="#"><img src="images/instagram-icon.svg" alt="Instagram" class="h-5"></a>
+        <a href="#"><img src="images/tiktok-icon.svg" alt="TikTok" class="h-5"></a>
+        <a href="#"><img src="images/youtube-icon.svg" alt="YouTube" class="h-5"></a>
+      </div>
+      <p>© 2025 ReptiCare. All rights reserved.</p>
+      <div class="mt-2 space-x-2">
+        <img src="images/visa.svg" alt="Visa" class="inline h-5">
+        <img src="images/mastercard.svg" alt="Mastercard" class="inline h-5">
+        <img src="images/paypal.svg" alt="PayPal" class="inline h-5">
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
