@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - ReptiCare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    :root { --reptigreen: #294C3A; }
+  </style>
+</head>
+<body class="bg-white font-sans">
+
+  <!-- Navigation -->
+  <header class="bg-[color:var(--reptigreen)] text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <img src="images/logo.svg" alt="ReptiCare Logo" class="h-8 w-8" />
+        <span class="font-bold text-xl">REPTICARE</span>
+      </div>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#" class="hover:underline text-orange-400">Home</a>
+        <a href="#" class="hover:underline">Shop</a>
+        <a href="#" class="hover:underline">About Us</a>
+        <a href="#" class="hover:underline">Contact Us</a>
+      </nav>
+      <div class="flex items-center space-x-2">
+        <div class="relative">
+          <input type="text" placeholder="Search products..." class="rounded pl-10 pr-3 py-1 text-black">
+          <span class="absolute left-3 top-1.5 text-gray-500">🔍</span>
+        </div>
+        <button class="bg-white text-[color:var(--reptigreen)] px-4 py-1 rounded">Log in</button>
+        <button class="bg-green-700 px-4 py-1 rounded">Sign up</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 items-center gap-8">
+    <div>
+      <p class="text-sm text-orange-500 font-semibold">Pet Health</p>
+      <h1 class="text-4xl font-bold text-black mb-4">Reptile Vaccinations</h1>
+      <p class="mb-6 text-gray-700 max-w-md">
+        Access all your pet’s medical records in one place — from checkups and vaccinations to notes from your vet.
+        Keep track of your reptile’s health journey, appointments, and treatments effortlessly.
+      </p>
+      <button class="bg-[color:var(--reptigreen)] text-white px-6 py-3 rounded shadow hover:bg-green-900 transition">
+        Schedule Vaccination
+      </button>
+    </div>
+    <div class="flex justify-center md:justify-end">
+      <img src="6958a995-769a-42fa-8f9c-59771b07bfaa.png" alt="Reptile" class="w-64 h-auto rounded-lg">
+    </div>
+  </section>
+
+  <!-- Appointments Section -->
+  <section class="max-w-7xl mx-auto px-4 mb-16 grid md:grid-cols-2 gap-8">
+    <!-- Upcoming Appointments -->
+    <div>
+      <h2 class="text-xl font-bold mb-4">Upcoming Appointments</h2>
+      <div class="space-y-4">
+        <!-- Appointment 1 -->
+        <div class="border rounded p-4 flex justify-between items-center bg-white shadow-sm">
+          <div>
+            <h3 class="font-semibold text-green-700">Green Iguana</h3>
+            <p class="text-sm text-gray-600">April 28, 2024 – 09:00 AM</p>
+          </div>
+          <div class="flex flex-col items-end space-y-1">
+            <span class="text-sm font-medium bg-green-100 text-green-800 px-2 py-1 rounded">Vaccine Confirmed</span>
+          </div>
+        </div>
+
+        <!-- Appointment 2 -->
+        <div class="border rounded p-4 flex justify-between items-center bg-white shadow-sm">
+          <div>
+            <h3 class="font-semibold text-green-700">Tortoise</h3>
+            <p class="text-sm text-gray-600">April 28, 2024 – 09:00 AM</p>
+          </div>
+          <div class="flex flex-col items-end space-y-1">
+            <span class="text-sm font-medium bg-green-100 text-green-800 px-2 py-1 rounded">Vaccine Confirmed</span>
+          </div>
+        </div>
+
+        <!-- Appointment 3 -->
+        <div class="border rounded p-4 flex justify-between items-center bg-white shadow-sm">
+          <div>
+            <h3 class="font-semibold text-green-700">Snake</h3>
+            <p class="text-sm text-gray-600">April 28, 2024 – 09:00 AM</p>
+          </div>
+          <div class="flex flex-col items-end space-y-1">
+            <span class="text-sm font-medium bg-green-100 text-green-800 px-2 py-1 rounded">Vaccine Confirmed</span>
+            <div class="flex gap-2 mt-1">
+              <button class="text-sm border px-3 py-1 rounded hover:bg-gray-100">Reschedule</button>
+              <button class="text-sm border px-3 py-1 rounded text-red-600 hover:bg-gray-100">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book a New Vaccination -->
+    <div>
+      <h2 class="text-xl font-bold mb-4">Book a New Vaccination</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Select Pet</label>
+          <select class="w-full border rounded px-3 py-2">
+            <option disabled selected>Select Pet</option>
+            <option>Green Iguana</option>
+            <option>Tortoise</option>
+            <option>Snake</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Vaccine</label>
+          <select class="w-full border rounded px-3 py-2">
+            <option disabled selected>Choose Vaccine</option>
+            <option>Salmonella</option>
+            <option>Metabolic Bone Disease</option>
+            <option>Respiratory Infection</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Date</label>
+          <input type="date" class="w-full border rounded px-3 py-2" />
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Time</label>
+          <input type="time" class="w-full border rounded px-3 py-2" />
+        </div>
+        <button type="submit" class="w-full bg-[color:var(--reptigreen)] text-white py-2 rounded hover:bg-green-900 transition">
+          Confirm Appointment
+        </button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-[color:var(--reptigreen)] text-white py-10 mt-16">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <h2 class="font-bold text-lg mb-2">🐾 REPTICARE</h2>
+        <p class="text-gray-300">
+          At ReptiCare, we specialize in the unique needs of scaly companions. Whether you care for snakes, lizards, geckos, or turtles, our clinic offers expert guidance, medical support, and premium products to keep your reptiles healthy and thriving.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white mb-2">Company</h3>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Gift cards</a></li>
+          <li><a href="#" class="hover:underline">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white mb-2">Useful Links</h3>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="#" class="hover:underline">New products</a></li>
+          <li><a href="#" class="hover:underline">Best sellers</a></li>
+          <li><a href="#" class="hover:underline">Discount</a></li>
+          <li><a href="#" class="hover:underline">F.A.Q</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white mb-2">Customer Service</h3>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+          <li><a href="#" class="hover:underline">Shipping</a></li>
+          <li><a href="#" class="hover:underline">Returns</a></li>
+          <li><a href="#" class="hover:underline">Order tracking</a></li>
+        </ul>
+        <div class="mt-4">
+          <p>📍 123 Bonifacio St., Makati City, Manila, Philippines 1220</p>
+          <p>📞 +63 916 878 2345</p>
+          <p✉️ repticare.ph@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-600 mt-10 pt-4 px-4 text-center text-gray-400 text-sm">
+      <div class="flex justify-center space-x-4 mb-2">
+        <a href="#"><img src="images/facebook-icon.svg" alt="Facebook" class="h-5"></a>
+        <a href="#"><img src="images/instagram-icon.svg" alt="Instagram" class="h-5"></a>
+        <a href="#"><img src="images/tiktok-icon.svg" alt="TikTok" class="h-5"></a>
+        <a href="#"><img src="images/youtube-icon.svg" alt="YouTube" class="h-5"></a>
+      </div>
+      <p>© 2025 ReptiCare. All rights reserved.</p>
+      <div class="mt-2 space-x-2">
+        <img src="images/visa.svg" alt="Visa" class="inline h-5">
+        <img src="images/mastercard.svg" alt="Mastercard" class="inline h-5">
+        <img src="images/paypal.svg" alt="PayPal" class="inline h-5">
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
